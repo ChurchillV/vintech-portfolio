@@ -7,7 +7,7 @@ const Hero = () => {
     <div id="Me" className="flex flex-col md:flex-row items-center justify-center md:gap-16 p-6">
       {/* Right side profile image and social icons */}
       <div className="flex flex-col items-center mt-2 md:mt-0 order-1 md:order-2">
-        <img src={profilePic} alt="A picture of me" className="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover" />
+        <img src={profilePic} alt="A picture of me" className="rounded-full w-40 h-40 md:w-56 md:h-56 object-cover" />
         <div className="flex flex-wrap justify-center gap-4 mt-5">
           <SocialIcon url="https://github.com/churchillv" className="rounded-full border border-purple-500" />
           <SocialIcon url="https://linkedin.com/in/vince-churchill" className="rounded-full border border-purple-500" />
