@@ -30,7 +30,7 @@ const Hero = () => {
         <span className="font-light my-2">⚛️🎨🖥️ I do frontend too (No interface is too hard for me to build)</span>
         <span className="font-light my-2">👨🏿‍💻📲💻🧠 I love building apps that solve everyday problems (Some are still in development)</span>
 
-        <div className="flex md:flex-row items-center justify-center md:justify-start md:gap-12 gap-3 mt-5">
+        <div className="flex md:flex-row items-center justify-center md:justify-start md:gap-12 ms-2 md:ms-0 gap-3 mt-5">
           <button className="rounded-3xl bg-purple-500 px-5 py-2 text-white text-lg md:text-2xl font-mono font-semibold">View My CV</button>
           <button className="rounded-3xl bg-transparent px-5 py-2 text-purple-500 border border-purple-500 text-lg md:text-2xl font-mono font-semibold">My Projects</button>
         </div>
