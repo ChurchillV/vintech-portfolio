@@ -7,9 +7,9 @@ const Skills = () => {
         Skills
       </h1>
 
-    <div className="flex overflow-x-scroll md:flex-row mt-5 gap-6 md:gap-12">
+    <div className="flex overflow-x-scroll mt-5 gap-6 md:gap-12">
   {/* Main Tech Stack */}
-  <div className="flex flex-shrink-0 flex-col w-full md:w-1/3">
+  <div className="flex flex-shrink-0 md:flex-shrink-1 flex-col w-full md:w-1/3">
     <h2 className="text-2xl md:text-3xl font-medium text-center mb-2 text-white bg-purple-700 py-2">
       Main Tech Stack
     </h2>
