@@ -7,15 +7,16 @@ const Skills = () => {
         Skills
       </h1>
 
-      <div className="flex overflow-x-auto md:flex-row mt-5 gap-6 md:gap-12">
+    <div className="flex overflow-x-scroll md:flex-row mt-5 gap-6 md:gap-12">
   {/* Main Tech Stack */}
-  <div className="flex flex-col w-full md:w-1/3">
+  <div className="flex flex-shrink-0 flex-col w-full md:w-1/3">
     <h2 className="text-2xl md:text-3xl font-medium text-center mb-2 text-white bg-purple-700 py-2">
       Main Tech Stack
     </h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:grid md:gap-4 overflow-x-auto sm:overflow-visible whitespace-nowrap px-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap md:whitespace-normal px-2">
+      {/* Icons */}
       <div className="flex justify-center md:block">
-        <img
+      <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
           alt="React"
           className="w-20 h-20 md:w-24 md:h-24"
@@ -53,11 +54,12 @@ const Skills = () => {
   </div>
 
   {/* Languages */}
-  <div className="flex flex-col w-full md:w-1/3">
-    <h2 className="text-2xl md:text-3xl font-medium text-center mb-2">
+  <div className="flex flex-shrink-0 flex-col w-full md:w-1/3">
+    <h2 className="text-2xl md:text-3xl font-medium text-center mb-2 text-white bg-purple-700 py-2">
       Languages
     </h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:grid md:gap-4 overflow-x-auto sm:overflow-visible whitespace-nowrap px-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap md:whitespace-normal px-2">
+      {/* Icons */}
       <div className="flex justify-center md:block">
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
@@ -104,11 +106,12 @@ const Skills = () => {
   </div>
 
   {/* Database Tech */}
-  <div className="flex flex-col w-full md:w-1/3">
-    <h2 className="text-2xl md:text-3xl font-medium text-center mb-2">
+  <div className="flex flex-shrink-0 flex-col w-full md:w-1/3">
+    <h2 className="text-2xl md:text-3xl font-medium text-center mb-2 text-white bg-purple-700 py-2">
       Database Tech
     </h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:grid md:gap-4 overflow-x-auto sm:overflow-visible whitespace-nowrap px-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap md:whitespace-normal px-2">
+      {/* Icons */}
       <div className="flex justify-center md:block">
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
@@ -148,11 +151,12 @@ const Skills = () => {
   </div>
 
   {/* Tools */}
-  <div className="flex flex-col w-full md:w-1/3">
-    <h2 className="text-2xl md:text-3xl font-medium text-center mb-2">
+  <div className="flex flex-shrink-0 flex-col w-full md:w-1/3">
+    <h2 className="text-2xl md:text-3xl font-medium text-center mb-2 text-white bg-purple-700 py-2">
       Tools
     </h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:grid md:gap-4 overflow-x-auto sm:overflow-visible whitespace-nowrap px-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-4 overflow-x-auto md:overflow-visible whitespace-nowrap md:whitespace-normal px-2">
+      {/* Icons */}
       <div className="flex justify-center md:block">
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
@@ -185,7 +189,8 @@ const Skills = () => {
   </div>
 </div>
 
-    </div>
+
+</div>
   );
 };
 
