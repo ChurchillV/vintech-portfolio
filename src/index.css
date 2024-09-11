@@ -3,3 +3,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.speech-bubble {
+    @apply bubble my-2 text-left;
+}
+
+.bubble {
+    background-color: #ffcafb; 
+    padding: 12px 18px;
+    border-radius: 16px;
+    position: relative;
+    max-width: 80%;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(61, 46, 60, 0.1);
+  }
+  
+  /* Bubble tail on the left for the chat style */
+  .bubble::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #ffcafb; 
+    border-bottom: 0;
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .bubble {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .bubble::before {
+      left: 22px;
+    }
+  }
+  
