@@ -9,13 +9,13 @@ const Navbar = () => {
         <nav className="md:block hidden">
             <ul className="flex justify-around gap-10 p-4">
                 <li>
-                <a href="#home" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">About Me</a>
+                <a href="#Me" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">About Me</a>
                 </li>
                 <li>
-                <a href="#about" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">Skills</a>
+                <a href="#Skills" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">Skills</a>
                 </li>
                 <li>
-                <a href="#services" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">Projects</a>
+                <a href="#Projects" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">Projects</a>
                 </li>
                 <li>
                 <a href="#contact" className="text-white hover:underline hover:underline-offset-4 decoration-violet-100">Experience</a>

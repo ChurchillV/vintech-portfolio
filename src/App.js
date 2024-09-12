@@ -5,6 +5,7 @@ import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import ScrollToTopArrow from './components/ScrollToTopArrow';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Skills />
       <Projects />
       <Footer />
+      <ScrollToTopArrow />
     </div>
   );
 }

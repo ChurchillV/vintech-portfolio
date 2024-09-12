@@ -45,7 +45,7 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   return (
-    <div className="w-full px-4 md:px-8 lg:px-72 mt-20">
+    <div className="w-full px-4 md:px-8 lg:px-72 mt-20" id='Projects'>
         <h1 className='text-4xl md:text-6xl text-purple-500 font-black text-center mb-4'>Projects</h1>
       {/* Spotlight section for larger screens */}
       <div className="hidden lg:block relative w-full h-96 mb-8 mt-12">

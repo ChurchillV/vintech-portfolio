@@ -117,7 +117,7 @@ const tools = [
 
 const Skills = () => {
   return (
-    <div className='flex flex-col mt-12 px-4 md:px-8 lg:px-72'>
+    <div className='flex flex-col mt-12 px-4 md:px-8 lg:px-72 scroll-' id='Skills'>
       <h1 className="text-4xl md:text-6xl text-purple-500 font-black text-center">
         Skills
       </h1>

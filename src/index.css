@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .speech-bubble {
     @apply bubble my-2 text-left text-slate-900 bg-gradient-to-r from-violet-300 to-violet-100;
 }
