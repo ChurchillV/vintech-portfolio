@@ -138,7 +138,7 @@ const Projects = () => {
             <img src={project.imageUrl} alt={project.name} className="rounded-lg w-full h-40 object-cover mb-4" />
             <span className="text-2xl font-bold ps-6 flex items-center">{project.name}
                 <span className='text-sm px-3 py-1 rounded-full bg-purple-600 text-white ml-3'>
-                    {activeProject.status}
+                    {project.status}
                 </span>
             </span>
             <div className="flex flex-wrap mt-4 p-6 gap-2">
