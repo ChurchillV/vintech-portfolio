@@ -8,37 +8,19 @@ const projects = [
     status: 'MVP',
     techStack: ['React', 'Node.js', 'PostgreSQL'],
     description: 'A full-stack web app for publishing, managing, booking and reviewing events.',
-    githubLink: 'https://github.com/project1',
-    demoLink: 'https://project1.demo.com',
-    imageUrl: '../images/VINTECH.jpg',
+    githubLink: '',
+    demoLink: 'https://bookit.oseiagm.com',
+    imageUrl: '/images/bookit.png',
   },
   {
-    name: 'Project 2',
+    name: 'The Pax App',
     status: 'Complete',
-    techStack: ['Next.js', 'Firebase'],
-    description: 'A real-time chat application.',
-    githubLink: 'https://github.com/project2',
-    demoLink: '',
-    imageUrl: '../images/VINTECH.jpg',
-  },
-  {
-    name: 'WordWave',
-    status: 'Complete',
-    techStack: ['HTML', 'CSS', 'Javascript'],
-    description: 'A Wordle-style multiplayer word guessing game',
-    githubLink: 'https://github.com/project2',
-    demoLink: '',
-    imageUrl: '../images/VINTECH.jpg',
-  },
-  {
-    name: 'Project 4',
-    status: 'Under Construction',
-    techStack: ['Next.js', 'Firebase'],
-    description: 'A real-time chat application.',
-    githubLink: 'https://github.com/project2',
-    demoLink: '',
-    imageUrl: '../images/VINTECH.jpg',
-  },
+    techStack: ['React', 'ExpressJS', 'Supabase'],
+    description: 'A member management and community engagement Progressive Web app building a member database for the KNUST Pax Romana Community',
+    githubLink: '',
+    demoLink: 'https://pax-romana-knust.vercel.app',
+    imageUrl: '/images/pic2.jpg',
+  }
 ];
 
 const Projects = () => {
@@ -77,7 +59,7 @@ const Projects = () => {
                     />
                     </a>
                 )}
-                {activeProject.demoLink && (
+                 {activeProject.demoLink && (
                     <a
                     href={activeProject.demoLink}
                     className="text-purple-300 hover:underline"
@@ -111,14 +93,21 @@ const Projects = () => {
             <img src={project.imageUrl} alt={project.name} className="rounded-lg w-full h-40 object-cover mb-4" />
             <span className="text-xl font-semibold md:text-center text-left ps-4 flex items-center">
                 {project.name}
-                <span className='text-xs px-2 rounded-full bg-purple-600 text-white ml-3'>
+                <span className='text-xs px-2 py-1 rounded-full bg-purple-600 text-white ml-3'>
                     {project.status}
                 </span>
             </span>
             <p className="text-sm text-left font-medium text-slate-700 ps-4">{project.description}</p>
+            <div className='flex items-start mt-4'>
+              <a href={project.demoLink} target='_blank' rel='noreferrer'>
+                  <span className='text-lg px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-400 text-white ml-3'>
+                      View Demo
+                  </span>
+              </a>
+            </div>
             <div className="flex flex-wrap mt-2 gap-2 p-4">
               {project.techStack.map((tech, idx) => (
-                <span key={idx} className="bg-purple-600 px-3 py-1 rounded-full text-sm text-white">
+                <span key={idx} className="border border-purple-600 px-3 py-1 rounded-full text-sm text-purple-600">
                   {tech}
                 </span>
               ))}
